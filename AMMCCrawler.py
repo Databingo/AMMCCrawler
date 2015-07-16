@@ -8,6 +8,7 @@ sys.setdefaultencoding('utf-8')#设定默认编码适应中文
 
 import urllib2
 url='https://pf.amac.org.cn/open/fundNotice?query_productName=%E6%96%B0%E4%B8%89%E6%9D%BF&currentPage=4'
+#page 1,2,3,4 have to change handly
 page=urllib2.urlopen(url).read()
 
 from lxml import etree   
